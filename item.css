@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+}
+.noOfOrder{
+    padding: 10px;
+}
+.line{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.selectedItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100vw;
+}
+
+h4{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.itemSelected{
+    /* margin-top: 10px; */
+    display: flex;
+    width: 100%;
+    margin-bottom: 3px;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+}
+
+.container{
+    display: flex;
+    border-collapse: collapse;
+    width: 100%;
+}
+.extraInfo{
+    width: 25%;
+    background-color: rgb(190, 190, 190);
+    margin:0 10px;
+}
+.itemContainer{
+    
+    background-color: rgb(254, 254, 254);
+    width: 65%;
+}
+.itemimg{
+    /* margin: 10px; */
+    width: 350px;
+    background-color: rgb(216, 216, 216);
+    padding:5px;
+    /* visibility: hidden; */
+}
+.itemimg>img{
+    height: 240px;
+    width: 300px;
+    margin-right: 10px;
+    /* border: 2px solid black; */
+}
+
+.description{
+    /* visibility: hidden; */
+    /* height: 250px; */
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.add{
+    width:50px;
+    font-size: 2rem;
+    background-color: rgb(113, 186, 186);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+}
+.add:active{
+    background-color: rgb(48, 110, 167);
+}
+.buyingNumber{
+    display: inline-block;
+    min-width: 50px;
+    text-align: center;
+}
+.sub{
+    font-size: 2rem;
+    width:50px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    background-color:tomato;
+    display: inline-block;
+    text-align: center;
+}
+.sub:active{
+    background-color: red;
+}
+.cancel{
+    padding: 10px;
+    background-color: #5d6464;;
+    border-radius: 40px;
+    border: 3px solid black;
+    width: 200px;
+}
+.cancel:active{
+    background-color:#717777;;
+}
+.addToCart{
+    padding: 10px;
+    background-color: #0F1111;;
+    color: white;
+    border-radius: 40px;
+    width: 250px;
+    border: 3px solid black;
+}
+.addToCart:active{
+    background-color:#252929;;
+}
+@media screen and (max-width:700px) {
+    .itemSelected{
+        display: block;
+        height: auto;
+    }
+    .description{
+        width: 95%;
+    }
+}
+
+  
+.final{
+    background-color: rgb(172, 172, 172);
+    padding: 30px;
+    width: 450px;
+    border-radius: 30px;
+    position: relative;
+    left:50vw;
+    z-index: 4;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    display: block;
+}
+
+.finalPrice{
+    background-color: rgb(185, 185, 185);
+    border-radius: 30px;
+}
+.buyBtn{
+    width: 100px;
+    font-size: 2rem;
+    background-color: rgb(235, 200, 24);
+    border: transparent;
+    border-radius: 20px;
+}
+.buyBtn:active{
+    background-color: rgb(255, 238, 0);
+}

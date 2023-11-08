@@ -1,0 +1,27 @@
+@media screen and (max-width:690px) {
+    body{
+        background-color: rgb(255, 119, 119);
+    }
+    
+    .nav-bar{
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:800px) {
+        .hero-section{
+            aspect-ratio: 16/9;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .hero-section{
+            aspect-ratio: 4/3;
+        }
+    }
+}
